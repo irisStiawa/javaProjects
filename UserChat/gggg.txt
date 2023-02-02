@@ -1,0 +1,5 @@
+User 1 hat am 2022-01-25 13:55:11 folgende Nachricht an user 2 gesendet: "es klaaappttt"
+User i hat am 2022-01-25 13:54:06 folgende Nachricht an user a gesendet: "oje"
+User iris hat am 2022-01-25 12:45:39 folgende Nachricht an user astrid gesendet: "was ist ?"
+User i hat am 2022-01-25 12:50:53 folgende Nachricht an user a gesendet: "lala"
+User i hat am 2022-01-25 13:53:04 folgende Nachricht an user a gesendet: "wwwwaaasss"

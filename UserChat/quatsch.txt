@@ -1,0 +1,4 @@
+User Iris hat am 2022-01-25 09:21:29 folgende Nachricht an user Astrid gesendet: "hello"
+User Astrid hat am 2022-01-25 09:21:35 folgende Nachricht an user Iris gesendet: "hello"
+User Iris hat am 2022-01-25 09:21:40 folgende Nachricht an user Astrid gesendet: "ohhha"
+User i hat am 2022-01-25 10:39:54 folgende Nachricht an user a gesendet: "hello"

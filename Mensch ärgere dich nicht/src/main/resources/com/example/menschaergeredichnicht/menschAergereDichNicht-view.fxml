@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="410.0" style="-fx-background-color: #bdaa99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menschaergeredichnicht.MenschAergereDichNichtController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="193.5" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.5" minWidth="10.0" prefWidth="406.5" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="74.5" minHeight="0.0" prefHeight="18.5" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="138.5" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Mensch ärgere dich nicht" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+      </Label>
+      <Label text="Player (rot)" textFill="#e61c1c" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Player (blau)" textFill="#1c81e6" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Player (grün)" textFill="#00e60b" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Player (gelb)" textFill="#e6d11c" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonStart" mnemonicParsing="false" onAction="#onButtonStartClick" onMouseEntered="#onMouseEnteredStart" onMouseExited="#onMouseExitedStart" style="-fx-background-color: #7D7065;" text="Start" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <font>
+            <Font name="Ink Free" size="14.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+      </Button>
+      <TextField fx:id="inputPlayerRed" style="-fx-background-color: #ffffff99;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="inputPlayerBlue" style="-fx-background-color: #ffffff99;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="inputPlayerGreen" style="-fx-background-color: #ffffff99;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="inputPlayerYellow" style="-fx-background-color: #ffffff99;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Label!" textFill="#e62a19" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

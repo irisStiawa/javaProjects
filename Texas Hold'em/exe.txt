@@ -1,0 +1,46 @@
+Texas Hold'em
+	
+	52 Karten
+	Spieler erhält 2 Karten
+	
+	-> 50 verbleiben im Deck
+	
+	* Erstellen Sie eine Liste oder Array oder Map oder was-auch-immer, um ein Pokerdeck abzubilden
+	* Herz, Karo, Pik, Treff
+	* A23456789TJQK
+	Idee: Wenn sie es als String speichern, zb als "AH" für "As Herz", oder "7T" für Treff 7
+	
+Erforschen Sie in der Entwicklungsumgebung (Ctrl-Q) die Klasse "Random" und benutzen Sie sie, um 2 zufällige Karten auszuwählen.
+	Java class Random ... new Random();
+Zur Analyse der Karten, erforschen Sie in der Entwicklungsumgebung die Methode ".substring", welche bei Stringvariablen verfügbar ist.
+	karte.substring
+	
+	Hand:
+	[1] [2]
+	
+	Board:
+	[3] [4] [5] - Flop
+	[6] - Turn
+	[7] - River
+	
+	Die Aufgabe lautet:
+	
+	* Dealen Sie eine Hand an den Spieler (2 Karten)
+	
+	* Analysieren Sie die Hand nach folgenden Kriterien:
+		- Ist es ein Pärchen ja/nein? (zb 2 Buben, Damen, 7er, ...)
+		- Sind es zwei der gleichen Farbe ja/nein? (zb 2 Herz, 2 Pik, ...)
+
+--------------------------------------------------------
+BONUS-AUFGABE:
+	* Dealen Sie das Board zu Ende (5 weitere Karten)
+	
+	* Analysieren Sie nun alle 7 Karten:
+		- Ist es zumindest ein Drilling geworden? (zb 3 Buben, Damen, ...)
+		- Sind insgesamt 5 Karten von der gleichen Farbe vorhanden? (5 Herz, Pik...)
+		
+		
+Ausgabe:
+Spieler erhält 7H QH -> Das sind 2 Herz!
+Spieler erhält 3T 3K -> Das ist ein Pärchen
+Spieler erhält 3H 7P -> Leider nix!

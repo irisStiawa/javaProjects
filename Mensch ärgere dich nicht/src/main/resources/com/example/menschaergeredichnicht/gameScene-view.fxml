@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="807.0" prefWidth="867.0" style="-fx-background-color: #bdaa99; -fx-border-color: #7D7065; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menschaergeredichnicht.GameSceneController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="48.5" minHeight="48.5" prefHeight="48.5" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="55.5" minHeight="50.0" prefHeight="55.5" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Mensch ärgere dich nicht" GridPane.columnSpan="13" GridPane.halignment="CENTER" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Ink Free" size="34.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="homeR1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeR2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeR4" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f13" GridPane.columnIndex="3" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f14" GridPane.columnIndex="4" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f15" GridPane.columnIndex="5" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f16" GridPane.columnIndex="5" GridPane.rowIndex="5" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f17" GridPane.columnIndex="5" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f22" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f18" GridPane.columnIndex="5" GridPane.rowIndex="3" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f21" alignment="TOP_LEFT" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="-5.0" top="-5.0" />
+         </GridPane.margin>
+         <children>
+            <Circle fill="DODGERBLUE" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f20" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f19" GridPane.columnIndex="5" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeY3" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f34" GridPane.columnIndex="8" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f33" GridPane.columnIndex="9" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f32" GridPane.columnIndex="10" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f31" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="-5.0" right="-5.0" />
+         </GridPane.margin>
+         <children>
+            <Circle fill="#00ff0d" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f30" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f29" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f28" GridPane.columnIndex="10" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f27" GridPane.columnIndex="9" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f26" GridPane.columnIndex="8" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f25" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f24" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f23" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="4" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f35" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f36" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="9" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f37" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="10" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f38" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="11" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f39" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="12" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f40" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f1" GridPane.columnIndex="5" GridPane.rowIndex="12" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="-5.0" left="-5.0" />
+         </GridPane.margin>
+         <children>
+            <Circle fill="#ffea1f" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f2" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="11" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f3" alignment="BOTTOM_LEFT" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f4" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="9" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f5" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f6" GridPane.columnIndex="4" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f7" GridPane.columnIndex="3" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f8" GridPane.columnIndex="2" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f9" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f10" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f11" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="-5.0" top="-5.0" />
+         </GridPane.margin>
+         <children>
+            <Circle fill="#ff1f1f" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="f12" GridPane.columnIndex="2" GridPane.rowIndex="6" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="WHITE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="r3" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="r2" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="r1" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="b4" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="b3" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="b1" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="b2" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeB4" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeB3" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeB2" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeB1" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="DODGERBLUE" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeG2" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeG1" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeG4" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeG3" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeY4" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeY2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="homeY1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="g1" GridPane.columnIndex="10" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="g2" GridPane.columnIndex="9" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="g3" GridPane.columnIndex="8" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="g4" GridPane.columnIndex="7" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#00ff0d" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_LEFT" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="y1" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="y2" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="y3" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="y4" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="TOP">
+         <children>
+            <Circle fill="#ffea1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+      <StackPane fx:id="r4" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" StackPane.alignment="CENTER_RIGHT" />
+         </children>
+      </StackPane>
+      <Button fx:id="buttonDice" mnemonicParsing="false" onMouseEntered="#onMouseEnteredDice" onMouseExited="#onMouseExitedDice" onMousePressed="#onMousePressedDice" style="-fx-background-color: #7D7065;" text="Click here to Dice" textFill="#f7f7f7" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="10">
+         <font>
+            <Font name="Ink Free" size="14.0" />
+         </font>
+      </Button>
+      <StackPane fx:id="homeR3" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Circle fill="#ff1f1f" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </StackPane>
+      <ImageView fx:id="diceView" fitHeight="100.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="7" />
+      <Label fx:id="info" GridPane.columnIndex="13" GridPane.columnSpan="2" GridPane.rowIndex="9">
+         <font>
+            <Font name="Ink Free" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

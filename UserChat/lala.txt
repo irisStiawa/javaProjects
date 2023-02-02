@@ -1,0 +1,2 @@
+User i hat am 2022-01-25 10:40:12 folgende Nachricht an user a gesendet: "hola"
+User a hat am 2022-01-25 10:40:17 folgende Nachricht an user i gesendet: "jippi"
