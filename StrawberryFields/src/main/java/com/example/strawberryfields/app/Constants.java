@@ -5,6 +5,8 @@ public class Constants {
     public static final String PATH_TO_FIELD_FXML = "/com/example/strawberryfields/fxml/strawberryField-view.fxml";
     public static final String PATH_TO_GAME_FXML = "/com/example/strawberryfields/fxml/game-view.fxml";
 
+    public static final String PATH_TO_CONCLUSION_FXML= "/com/example/strawberryfields/fxml/conclusion-view.fxml";
+
     public static final int NUMBER_ROWS = 7;
     public static final int NUMBER_COLS = 8;
 
@@ -19,3 +21,7 @@ public class Constants {
     public static final String STRAWBERRY = "s";
 
 }
+
+
+
+

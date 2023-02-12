@@ -9,6 +9,8 @@ import com.example.strawberryfields.model.Square;
 import com.example.strawberryfields.app.Constants;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
@@ -30,7 +32,7 @@ public class StrawberryFieldController extends BaseController {
 
 //    // Model, das die Daten liefert
 //    private Game game = new Game();
-    private Field field = game.getField();
+    private Field field = game.getValue().getField();
 
     @FXML
     void initialize() {
@@ -38,7 +40,7 @@ public class StrawberryFieldController extends BaseController {
 
         initField();
 
-        game.getField().getSquares().addListener(new ListChangeListener<Square>() {
+        game.getValue().getField().getSquares().addListener(new ListChangeListener<Square>() {
             @Override
             public void onChanged(Change<? extends Square> change) {
 
@@ -70,7 +72,12 @@ public class StrawberryFieldController extends BaseController {
 //        fieldView.addEventHandler(KeyEvent.KEY_PRESSED, (e) -> onKeyPressed(e));
         fieldView.setOnKeyPressed(this::onKeyPressed);
 
-
+        BaseController.gameProperty().addListener(new ChangeListener<Game>() {
+            @Override
+            public void changed(ObservableValue<? extends Game> observableValue, Game oldGame, Game newGame) {
+                initialize();
+            }
+        });
     }
 
 
@@ -123,7 +130,7 @@ public class StrawberryFieldController extends BaseController {
 
             // Je nachdem welches Item im Model an dieser Position liegt, wird
             // das passende Bild ausgewählt
-            String item = game.getField().getSquares().get(index).getItem();
+            String item = game.getValue().getField().getSquares().get(index).getItem();
             // FIXME: überprüfen ob item vorhanden
             if (item != null) {
                 Image image = imageForItem(item);
@@ -165,7 +172,7 @@ public class StrawberryFieldController extends BaseController {
     // Eventhandler KeyEvents
     private void onKeyPressed(KeyEvent keyEvent){
 
-        game.handleKeyPressed(keyEvent.getCode());
+        game.getValue().handleKeyPressed(keyEvent.getCode());
     }
 
 

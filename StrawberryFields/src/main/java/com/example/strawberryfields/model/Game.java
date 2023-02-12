@@ -1,24 +1,38 @@
 package com.example.strawberryfields.model;
 
 import com.example.strawberryfields.app.Constants;
+import com.example.strawberryfields.app.StrawberryFieldApplication;
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Game {
     private Field field = new Field();
     private Player currentPlayer;
     private Player otherPlayer;
 
+    private String winner;
+
+
     private final Player player1;
     private final Player player2;
     private IntegerProperty strawberriesLeft  = new SimpleIntegerProperty(Constants.COUNT_OF_STRAWBERRY);
 
+
+
     public Game() {
         player1 = new Player("Iris", 0, Constants.PERSON_FEMALE, new Position(0,0));
         player2 = new Player("Astrid", 0, Constants.PERSON_MALE, new Position(Constants.NUMBER_COLS-1,Constants.NUMBER_ROWS-1));
-
-
 
         initItems();
     }
@@ -55,7 +69,11 @@ public class Game {
             currentPlayer.setPoints(currentPlayer.getPoints() + 1);
             strawberriesLeft.set(getStrawberriesLeft() - 1);
 
-            checkWin();
+            try {
+                checkWin();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
 
         } else if (item != null && item.equals(otherPlayer.getItem())){
             //otherPlayer zurück zum start
@@ -68,12 +86,27 @@ public class Game {
         tooglePlayer();
     }
 
-    private void checkWin() {
+    private void checkWin() throws Exception{
         if(getStrawberriesLeft() <= 0){
-            String winner = currentPlayer.getPoints() > otherPlayer.getPoints() ? currentPlayer.getName() : otherPlayer.getName();
-            System.out.println(winner + " was the Winner!!!");
+            if(player1.getPoints() > player2.getPoints()){
+                winner = player1.getName();
+            } else if (player1.getPoints() < player2.getPoints()) {
+                winner = player2.getName();
+            } else if(player1.getPoints() == player2.getPoints()){
+                winner = "unentschieden";
+            }
+
+            FXMLLoader fxmlLoader = new FXMLLoader(StrawberryFieldApplication.class.getResource(Constants.PATH_TO_CONCLUSION_FXML));
+            Parent root = null;
+            root = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
         }
     }
+
+
+
 
     private void tooglePlayer() {
 
@@ -116,4 +149,14 @@ public class Game {
     public IntegerProperty strawberriesLeftProperty() {
         return strawberriesLeft;
     }
+
+    public String getWinner() {
+        return winner;
+    }
+
+    public void setWinner(String winner) {
+        this.winner = winner;
+    }
+
+
 }

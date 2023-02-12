@@ -2,6 +2,10 @@ package com.example.strawberryfields.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.example.strawberryfields.model.Game;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
@@ -36,11 +40,19 @@ public class GameStatusController extends BaseController{
         assert player2PointsLabel != null : "fx:id=\"player2PointsLabel\" was not injected: check your FXML file 'game-status-view.fxml'.";
         assert strawberrysLeftLabel != null : "fx:id=\"strawberrysLeftLabel\" was not injected: check your FXML file 'game-status-view.fxml'.";
 
-        player1NameLabel.textProperty().bind(game.getPlayer1().nameProperty());
-        player2NameLabel.textProperty().bind(game.getPlayer2().nameProperty());
-        player1PointsLabel.textProperty().bind(game.getPlayer1().pointsProperty().asString());
-        player2PointsLabel.textProperty().bind(game.getPlayer2().pointsProperty().asString());
-        strawberrysLeftLabel.textProperty().bind(game.strawberriesLeftProperty().asString());
+        player1NameLabel.textProperty().bind(game.getValue().getPlayer1().nameProperty());
+        player2NameLabel.textProperty().bind(game.getValue().getPlayer2().nameProperty());
+        player1PointsLabel.textProperty().bind(game.getValue().getPlayer1().pointsProperty().asString());
+        player2PointsLabel.textProperty().bind(game.getValue().getPlayer2().pointsProperty().asString());
+        strawberrysLeftLabel.textProperty().bind(game.getValue().strawberriesLeftProperty().asString());
+
+        BaseController.gameProperty().addListener(new ChangeListener<Game>() {
+            @Override
+            public void changed(ObservableValue<? extends Game> observableValue, Game oldGame, Game newGame) {
+                initialize();
+            }
+        });
+
     }
 
 }

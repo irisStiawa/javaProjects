@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="152.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.strawberryfields.controller.ConclusionView">
+   <children>
+      <Label fx:id="winnerLabel" contentDisplay="CENTER" layoutX="115.0" layoutY="31.0" textAlignment="CENTER" AnchorPane.topAnchor="31.0" />
+      <Button layoutX="115.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#playAgain" text="Nochmal Spielen" />
+      <Button layoutX="260.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#exit" text="Spiel beenden" />
+   </children>
+</AnchorPane>
